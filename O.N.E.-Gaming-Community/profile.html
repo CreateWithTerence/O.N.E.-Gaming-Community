@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" alt="home icon"><span></span><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt="friends icon"><span>Allies</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt="home"><span>Games</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="home"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="home"><span>Notification</span></a></li>
+            </ul>
+
+            <div class="search-box">
+                <img src="images/search.png" alt="Search Box">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-4.jpg.png" alt="profile picture" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-----profile-drop-down-menu---->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-4.jpg.png" alt="">
+                    <div>
+                        <h3>Terence Dlamini</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/news.png" alt="">
+                    <p>News</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/mod.png" alt="">
+                    <p>Modding</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------Navbar Close--------------------->
+    
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="images/cover-pic.png" width="100%" alt="" class="profile-cover">
+                <div class="profile-container-inner">
+                    <img src="images/user-4.jpg.png" class="profile-pic" alt="">
+                    <h1>Terence Dlamini</h1>
+                    <b>Passionate Gamer Seeking Thrilling Adventures and Unforgettable Gaming Experiences.</b>
+                    <p>South Africa &middot; <a href="#">Contact info</a></p>
+                    <div class="mutual-connection">
+                        <img src="images/user-5.png" alt="">
+                        <span>1 mutal connection: You</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="https://www.linkedin.com/in/terenceinfo/" class="primary-btn"><img src="images/connect.png" alt="">Connect</a>
+                        <a href="https://www.linkedin.com/in/terenceinfo/"><img src="images/chat.png" alt="">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>Hi there! <br> 
+                    If you're seeking someone with a passion for growth and a dedication to making a difference, 
+                    I'm here and ready to be part of something great.
+                    Looking forward to connecting with you!</p>
+                    <a href="https://www.linkedin.com/in/terenceinfo/" class="see-more-link">See more...</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Games Played</h2>
+                <div class="profile-desc-row">
+                    <img src="images/microsoft.png" alt="">
+                    <div>
+                        <h3>The Witcher 3: Wild Hunt</h3>
+                        <b>Immersive fantasy masterpiece.</b>
+                        <b>100+ hours &middot; 1.5 years ago</b>
+                        <p> Spent more time hunting monsters than dealing with 
+                            real-life responsibilities. Geralt became my alter ego, 
+                            and those tough choices? Let's just say I needed a 
+                            moral compass!</p>
+                            <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/slack.png" alt="">
+                    <div>
+                        <h3>Overwatch</h3>
+                        <b>Fast-paced competitive chaos.</b>
+                        <b>500+ hours &middot; 3 years ago</b>
+                        <p>Became a master of "Play of the Game" in my mind, 
+                            but reality proved otherwise. Still, the intense battles, 
+                            hilarious voice lines, and epic team combos kept me 
+                            hooked for hours on end.</p>
+                            <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/google.png" alt="">
+                    <div>
+                        <h3>Minecraft</h3>
+                        <b>Endless creative adventures.</b>
+                        <b>200+ hours &middot; 9 years ago</b>
+                        <p>I may have mined more blocks than I can count, 
+                            but hey, I'm a pro at building extravagant dirt 
+                            houses! From surviving creepers to creating pixelated masterpieces, 
+                            Minecraft is my virtual playground of endless creativity 
+                            and laughs.</p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show all 7 experience <img src="images/right-arrow.png" alt=""></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Wishlist</h2>
+                <div class="profile-desc-row">
+                    <img src="images/stanford.png" alt="">
+                    <div>
+                        <h3>Cyberpunk 2077</h3>
+                        <b>Captivating futuristic world, immersive storytelling.</b>
+                        <b>Rating: 8/10</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/north.png" alt="">
+                    <div>
+                        <h3>The Last of Us Part II</h3>
+                        <b>Gripping narrative, emotional journey.</b>
+                        <b>Rating: 9/10</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/mit.png" alt="">
+                    <div>
+                        <h3>Ghost of Tsushima</h3>
+                        <b> Stunning visuals, samurai action-packed adventure.</b>
+                        <b>Rating: 9/10</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>My Skills</h2>
+                <a href="#" class="skill-btn">Precision aiming</a>
+                <a href="#" class="skill-btn">Strategic planning</a>
+                <a href="#" class="skill-btn">Quick reflexes</a>
+                <a href="#" class="skill-btn">Team coordination</a>
+                <a href="#" class="skill-btn">Adaptability</a>
+                <a href="#" class="skill-btn">Multi-tasking</a>
+                <a href="#" class="skill-btn">Fast decision-making</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>My Groups</h2>
+                <a href="#" class="language-btn">Rookie to Pro</a>
+                <a href="#" class="language-btn">Casual Mobile Gamers Alliance</a>
+                <a href="#" class="language-btn">RPG Enthusiasts Guild</a>
+                <a href="#" class="language-btn">FPS Elite Squad</a>
+            </div>
+        </div>
+
+        <!-----profile-sidebar-------->
+
+        <div class="profile-sidebar">
+
+            <div class="sidebar-ad">sidebar-ad
+                <small>Ad &middot;&middot;&middot;</small>
+                <p>Master the 5 priciple of web design</p>
+                <div>
+                    <img src="images/user-4.jpg.png" alt="">
+                    <img src="images/mi-logo.png" alt="">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/user-5.png" alt="">
+                    <div>
+                        <h2>Samuel Tony</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-3.jpg" alt="">
+                    <div>
+                        <h2>Alex Leo</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-2.png" alt="">
+                    <div>
+                        <h2>Steave Greg</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.jpg" alt="">
+                    <div>
+                        <h2>Martin Lewis</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-1.png" alt="">
+                    <div>
+                        <h2>Benjamin Xia</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessiblity</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png" alt="">
+                <p>GamePro &#169; 2022. All right reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+
+
+
+</body>
+</html> 

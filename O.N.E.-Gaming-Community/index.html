@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O.N.E. Gaming Community</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" alt="home icon"><span></span><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt="friends icon"><span>Allies</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt="home"><span>Games</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="home"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="home"><span>Notification</span></a></li>
+            </ul>
+
+            <div class="search-box">
+                <img src="images/search.png" alt="Search Box">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-4.jpg.png" alt="profile picture" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-----profile-drop-down-menu---->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-4.jpg.png" alt="">
+                    <div>
+                        <h3>Terence Dlamini</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/news.png" alt="">
+                    <p>News</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/mod.png" alt="">
+                    <p>Modding</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------Navbar Close--------------------->
+    
+    <div class="container">
+        <!--------------------left sidebar--------------------->
+        <div class="left-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon" alt="">
+                <h3>Trending News</h1>
+                <a href="#">New Game Announcement: "Mystic Realms" 
+                    Takes Players on an Epic Adventure</a>
+                <span>1h ago &middot; 10,934 readers</span>
+
+                <a href="#">Exclusive Interview: Game Developer Reveals Insights into Upcoming AAA Title</a>
+                <span>3h ago &middot; 5,683 readers</span>
+
+                <a href="#">Major Esports Tournament: Top Teams to Compete for $1 Million Prize Pool/a>
+                <span>5h ago &middot; 8,936 readers</span>
+
+                <a href="#">Gaming Convention Recap: Highlights from the Annual Gaming Expo</a>
+                <span>10h ago &middot; 7,204 readers</span>
+
+                <a href="#">Upcoming Game Release: "CyberVerse" Launches Next Month</a>
+                <span>1d ago &middot; 9,579 readers</span>
+
+                <a href="#">Indie Spotlight: Discover the Hidden Gems of the Gaming World</a>
+                <span>1d ago &middot; 10,789 readers</span>
+
+                <a href="#">Virtual Reality Breakthrough: New Headset Promises Immersive Gaming Experience</a>
+                <span>2d ago &middot; 12,873 readers</span>
+
+                <a href="#">Gaming Charity Event Raises Over $100,000 for Children's Hospitals</a>
+                <span>3d ago &middot; 2,169 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png" alt="">Recent Game Releases</a>
+                <a href="#"><img src="images/recent.png" alt="">Upcoming Game Conventions</a>
+                <a href="#"><img src="images/recent.png" alt="">Gaming Industry Trends</a>
+                <a href="#"><img src="images/recent.png" alt="">Game Development Tools</a>
+                <a href="#"><img src="images/recent.png" alt="">Virtual Reality in Gaming</a>
+                <a href="#"><img src="images/recent.png" alt="">eSports and Competitive Gaming</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group.png" alt="">Open World RPG Enthusiasts</a>
+                <a href="#"><img src="images/group.png" alt="">First-Person Shooter Fanatics/a>
+                <a href="#"><img src="images/group.png" alt="">Strategy and Tactical Gamers</a>
+                <a href="#"><img src="images/group.png" alt="">Indie Game Development Community</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png" alt="">IndieGameDev</a>
+                <a href="#"><img src="images/hashtag.png" alt="">eSportsLife</a>
+                <a href="#"><img src="images/hashtag.png" alt="">GameDevTips</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+
+            <p id="showMoreLink" onclick="toggleActivity()">Show more<b> +</b></p>
+        </div>
+
+        <!--------------------main content--------------------->
+        <div class="main-content">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/user-4.jpg.png" alt="">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png" alt="">Photo</li>
+                    <li><img src="images/video.png" alt="">Video</li>
+                    <li><img src="images/event.png" alt="">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="images/down-arrow.png" alt=""></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-1.png" alt="">
+                    <div>
+                        <h1>Leo</h1>
+                        <small>Just finished an intense gaming session! </small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Hey gamers! It's Benjamin here, sharing a quick update on my daily gaming life. 
+                    I've been fully immersed in some epic adventures today, battling dragons, 
+                    exploring new worlds, and leveling up my skills. The gaming adrenaline is real!
+                    Whether it's dominating the leaderboards or discovering hidden gaming gems, 
+                    I'm always on the lookout for thrilling gaming experiences. 
+                    From early morning raids to late-night LAN parties, gaming is an essential part of my daily routine.
+                    Stay tuned for more gaming stories, tips, and exciting updates from my gaming journey. 
+                    Let's keep the gaming community strong!
+                    #GamingLife #EpicAdventures #LevelUp #GamingCommunity
+                </p>
+                <img src="images/post-image-1.jpg" width="100%" alt="">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users">Abhins Mishk and 1534 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-4.jpg.png" class="post-activity-user-icon" alt="">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-------2nd post------->
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-2.png" alt="">
+                    <div>
+                        <h1>Alex</h1>
+                        <small>Exciting news, fellow gamers! </small>
+                        <small>4 hours ago</small>
+                    </div>
+                </div>
+                <p>Hey there, it's Alex, your gaming aficionado, with a thrilling game update to share. 
+                    Brace yourselves for the highly anticipated expansion pack, "Rise of the Ancients," hitting the gaming world soon!
+                    Prepare to embark on a mesmerizing journey filled with ancient mysteries, legendary artifacts, and epic battles. 
+                    This expansion introduces a whole new realm to explore, complete with breathtaking landscapes and formidable foes. 
+                    Get ready to unlock powerful abilities, forge alliances, and rewrite the fate of the realm.
+                    I've already secured my copy, and I can't wait to dive headfirst into this captivating expansion. 
+                    Join me as we unravel the secrets of the Ancients and rise to new heights of gaming glory!
+                    Stay tuned for more updates, gameplay tips, and exclusive sneak peeks. 
+                    It's time to write your own legend in the world of "Rise of the Ancients"!
+                    #GameUpdate #RiseOfTheAncients #GamingJourney #UnleashYourPower
+                </p>
+                <img src="images/post-image-2.jpg" width="100%" alt="">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users">Abhins Mishk and 1534 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-4.jpg.png" class="post-activity-user-icon" alt="">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-------3nd post------->
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.jpg" alt="">
+                    <div>
+                        <h1>Sarah</h1>
+                        <small>Calling all gamers!</small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>Hey, it's Sarah, your gaming buddy, here with an exciting announcement. 
+                    I'm thrilled to invite you to join me on a gaming adventure like no other. 
+                    Let's level up together and conquer new challenges!
+                    Whether you're a seasoned gamer or just starting your gaming journey, 
+                    this is the perfect opportunity to connect, share strategies, and form an unstoppable gaming squad. 
+                    Together, we'll explore vast virtual worlds, defeat bosses, and celebrate our victories.
+                    So, grab your controllers, put on your headsets, and let's embark on this gaming journey of a lifetime! 
+                    Join me as we create unforgettable memories and forge lifelong friendships within the gaming community.
+                    Stay tuned for more gaming meetups, tournaments, and exciting collaborations. 
+                    Get ready to unleash your gaming prowess and dominate the digital realm!
+                    #LevelUpTogether #GamingAdventure #GamingCommunity #UnleashYourProwess
+                </p>
+                <!--<img src="images/post-image-3.jpg" width="100%" alt="">-->
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users">Abhins Mishk and 1534 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-4.jpg.png" class="post-activity-user-icon" alt="">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+        <!-------4nd post------->
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.jpg" alt="">
+                    <div>
+                        <h1>Mark</h1>
+                        <small>Game Review Alert! </small>
+                        <small>3 hours ago</small>
+                    </div>
+                </div>
+                <p>Hey gamers, it's Mark, your gaming connoisseur, with an exhilarating game review for you. 
+                    Today, let's dive into the futuristic world of CyberVerse Unleashed!
+                    Get ready to be transported into a virtual reality utopia, where advanced technology meets adrenaline-pumping action. 
+                    From intense PvP battles to immersive exploration, CyberVerse Unleashed offers a gaming experience like no other.
+                    The stunning visuals, captivating storyline, and seamless gameplay mechanics will keep you hooked for hours on end. 
+                    Customize your character, unlock powerful abilities, and venture into a sprawling open world filled with hidden treasures and thrilling quests.
+                    As a seasoned gamer, I can confidently say that CyberVerse Unleashed delivers on all fronts. 
+                    It's a game that pushes the boundaries of what's possible in gaming, offering an unforgettable adventure for players of all skill levels.
+                    So, grab your gear, log in, and prepare to get lost in the breathtaking world of CyberVerse Unleashed. 
+                    Trust me, this is one gaming experience you don't want to miss!
+                    #GameReview #CyberVerseUnleashed #ImmersiveGaming #UnforgettableAdventure
+                </p>
+                <img src="images/post-image-4.jpg" width="100%" alt="">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users">Abhins Mishk and 1534 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-4.jpg.png" class="post-activity-user-icon" alt="">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------right sidebar--------------------->
+        <div class="right-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.png" width="100%"  height="160px" alt="cover picture">
+                <div class="sidebar-profile-info">
+                    <img src="images/user-4.jpg.png" alt="profile picture of user">
+                    <h1>Terence</h1>
+                    <h3>Embrace the Game, Unleash the Adventure!</h3>
+                    <ul>
+                        <li>Likes<span>1651XP</span></li>
+                        <li>Achievements<span>810XP</span></li>
+                        <li>Game Collections<span>205XP</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="images/items.png" alt="">Games</a>
+                    <a href="#"><img src="images/premium.png" alt="">Subscription</a>
+                </div>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot;&middot;&middot;</small>
+                <p>Master the 5 priciple of web design</p>
+                <div>
+                    <img src="images/user-4.jpg.png" alt="">
+                    <img src="images/mi-logo.png" alt="">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessiblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="images/logo.png" alt="">
+                    <p>GamePro &#169; 2022. All right reserved</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+
+        let sideActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink");
+
+        function toggleActivity(){
+            sideActivity.classList.toggle("open-activity");
+
+            if (sideActivity.classList.contains("open-activity")){
+                moreLink.innerHTML = "Show less <b> - </b>";
+            }else{
+                moreLink.innerHTML = "Show more <b> + </b>";
+            }
+        }
+
+    </script>
+
+
+
+</body>
+</html> 
