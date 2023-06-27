@@ -15,9 +15,7 @@ Key Features
 8. Game Reviews and Recommendations: Users can read and write game reviews, share their gaming experiences, and receive recommendations based on their preferences.
 9. Gaming Resources: The website offers resources such as guides, tutorials, and tips for different games to help users improve their skills.
 10. In-game Achievements and Progress Tracking: Users can track their in-game achievements, progress, and statistics on the website.
-11. Live Streaming and Content Creation: The website may have features for users to live stream their gameplay or create gaming-related content, such as videos or blog posts.
-12. Virtual Marketplaces: The website may facilitate the buying, selling, or trading of in-game items, virtual currencies, or gaming-related merchandise.
-13. Community Events and Contests: The website organizes community events, challenges, or contests for users to participate in and win rewards.
+11. Community Events and Contests: The website organizes community events, challenges, or contests for users to participate in and win rewards.
 
 Please note that this template includes only the front-end code, and does not include any backend functionality or integration with a server or database. It serves as a starting point for building the user interface and can be extended and customized to suit your specific backend implementation.
 
